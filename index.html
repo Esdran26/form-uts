@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.uts.edu.co/sitio/wp-content/uploads/2019/10/favicon-1.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <main>
+        <form id="form">
+
+            <div class="radios-content input-div">
+                <label >Tipos de documento <b>*</b></label>
+                <br>
+                <div class="inputs-radios">
+                    <input type="radio" name="value" id="TI" value="TI">
+                    <label style="color: #0b4a75" for="TI">Tarjeta de identidad</label>
+                    <br>
+                    <input type="radio" name="value" id="CC" value="CC">
+                    <label style="color: #0b4a75" for="CC">Cédula de ciudadania</label>
+                </div>
+            </div>
+        </form>
+
+        <div class="checkData">
+            <input type="checkbox" name="checkData" id="checkData">
+            <label for="checkData">Acepto que dan tratamiento a mis datos personales según la normatividad vigente</label>
+        </div>
+    
+        <div class="input-submit">
+            <input type="submit" value="Enviar">
+        </div>
+    </main>
+
+    
+
+    <script src="js/app.js"></script>
+</body>
+</html>
