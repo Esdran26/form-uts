@@ -134,7 +134,7 @@ input[type="submit"]:hover {
 @media (max-width: 480px) {
     main {
         margin: 3rem 1rem;
-        padding: 1rem;
+        padding: 2rem 1rem;
     }
     .input-div {
         margin: 0 1rem;
