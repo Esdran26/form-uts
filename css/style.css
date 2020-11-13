@@ -134,7 +134,7 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 740px) {
-    form {display: block;}
+    #input-content {display: block;}
     main {margin: 3rem 1rem;}
 }
 
