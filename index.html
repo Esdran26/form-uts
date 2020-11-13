@@ -14,31 +14,40 @@
         <div style="height: 100%;" class="input-center">
             <img src="/img/logos-uts-01.png" alt="Unidades Tecnológicas de Santander">
         </div>
-        <form id="form">
+        <form id="form" method="POST">
 
-            <div class="radios-content input-div">
-                <label >Tipos de documento <b>*</b></label>
-                <br>
-                <div class="inputs-radios">
-                    <input type="radio" name="value" id="TI" value="TI">
-                    <label style="color: #0b4a75" for="TI">Tarjeta de identidad</label>
+            <div id="input-content">
+                <div class="radios-content input-div">
+                    <label >Tipos de documento <b>*</b></label>
                     <br>
-                    <input type="radio" name="value" id="CC" value="CC">
-                    <label style="color: #0b4a75" for="CC">Cédula de ciudadania</label>
+                    <div class="inputs-radios">
+                        <input type="radio" name="value" id="TI" value="TI" required>
+                        <label style="color: #0b4a75" for="TI">Tarjeta de identidad</label>
+                        <br>
+                        <input type="radio" name="value" id="CC" value="CC" required>
+                        <label style="color: #0b4a75" for="CC">Cédula de ciudadania</label>
+                    </div>
                 </div>
+            </div>
+
+            
+
+            
+
+            <div class="checkData">
+                <input type="checkbox" name="checkData" id="checkData" required>
+                <label for="checkData">Acepto que dan tratamiento a mis datos personales según la normatividad vigente</label>
+            </div>
+        
+            <div class="input-center">
+                <input id="submit" type="submit" value="Enviar">
             </div>
         </form>
 
-        <div class="checkData">
-            <input type="checkbox" name="checkData" id="checkData">
-            <label for="checkData">Acepto que dan tratamiento a mis datos personales según la normatividad vigente</label>
-        </div>
-    
-        <div class="input-center">
-            <input type="submit" value="Enviar">
-        </div>
+        
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

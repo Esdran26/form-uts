@@ -26,7 +26,7 @@ label[for="checkData"] {
     margin-left: 1rem;
 }
 
-form {
+#input-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr) repeat(3, 0);
@@ -85,6 +85,8 @@ main {
     margin: 1rem;
 }
 
+
+
 .input-center {text-align: center;}
 
 input[type="submit"] {
@@ -124,6 +126,11 @@ input[type="submit"]:hover {
 
 .input-form:focus  {
     border-bottom: 2px solid #0b4a75;
+}
+
+
+.input-form:invalid:focus {
+    border-bottom: 2px solid red;
 }
 
 @media (max-width: 740px) {
